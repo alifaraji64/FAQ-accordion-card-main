@@ -4,6 +4,14 @@
     padding:0;
     box-sizing:border-box;
 }
+.attribution{
+    position:absolute;
+    bottom:3px;
+    text-align:center;
+    width:100%;
+    margin:auto;
+    margin-top:10px;
+}
 body{ 
     background:hsl(240, 73%, 65%);  
 }
