@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{ 
+    background:hsl(240, 73%, 65%);  
+}
+.box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70%;
+    height:55%;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    user-select:none;
+}
+.rightsideimage{
+    position:absolute;
+    left:0;
+}
+.pattern-design{
+    position:absolute;
+    width:80vh;
+    top:-80px;
+    left:-260px;
+    z-index:2;
+}
+.woman-online-desktop{
+    position:absolute;
+    width:50vh;
+    top:80px;
+    left:-50px;
+    z-index:3;
+}
+.M1{display:none;}
+.M2{display:none;}
+.box-image{
+    position:absolute;
+    width:150px;
+    top:300px;
+    left:8%;
+}
+.faq{
+    position:absolute;
+    top:40px;
+    right:50px;
+    width:45%;
+    height:300px;
+    cursor:pointer;
+    
+}
+.header{
+    position:absolute;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight:700;
+    font-size:30px;
+    color:hsl(238, 29%, 16%);
+}
+.q1{
+    position:relative;
+    top:60px;
+    margin-bottom:10px;
+    font-size:12px;
+}
+.up{
+    display:flex;
+    justify-content:space-between;
+}
+.arrow{
+    height:90%; 
+    cursor:pointer;
+}
+.qu{
+    font-family: 'Kumbh Sans';
+    color:hsl(237, 12%, 33%);
+    cursor:pointer;
+    
+}
+.qu:hover{
+    color:rgb(255, 166, 0);
+}
+.line{
+    background-color:hsl(240, 5%, 91%);
+    opacity:40%;
+    margin-top:15px;
+    margin-bottom:0;
+}
+.answer{
+    font-size:12px;
+    font-family: 'Kumbh Sans';
+    color:hsl(240, 6%, 50%);
+    display:none;
+    line-height:15px;
+}
+/*  FOR MOBILE & TABLET DEVICES*/
+@media (max-width:972px){
+    .box{
+        height:70%;
+        width:90%;
+        margin:auto;
+        position:absolute;
+        top:60%;
+        overflow:scroll;
+    }
+    .pattern-design{display:none;}
+    .woman-online-desktop{display:none;}
+    .box-image{display:none;}
+    .M1{
+        width:45%;
+        display:inline;
+        position:absolute;
+        top:100px;
+        left:25%;
+        text-align:center;
+        z-index:4;      
+    }
+    .rightsideimage{
+        text-align:center;
+        position:relative;
+    }
+    .M2{
+        display:block;
+        position:absolute;
+        left:100px;
+        width:220px;
+        z-index:3;
+    }
+    .faq{
+        position:absolute;
+        width:80%;
+        top:200px;
+        text-align:center;
+    }
+    .header{
+        position:absolute;
+        width:20%;
+        margin:auto;
+        left:100px;
+    }
+}
